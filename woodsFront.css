@@ -25,52 +25,43 @@ body{
 }
 
 
-.optionBox1{
-    float:left;
-    display: block;
-    position: relative;
+
+.optionBoxes{
+    display:block;
+    position:relative;
     z-index: 5;
     cursor:pointer;
+    max-width: 200px;
+    max-height: 100px;
+	background-color:rgb(7, 7, 7);
+	color:rgb(255, 255, 255);
+	border-radius:10px;
+	text-align:center;
+	box-shadow: 2px 2px 3px rgb(116, 64, 146);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.optionBox1{
+    float:left;
 	width:260px;
 	height:60px;
     left: 275px;
 	bottom:130px;
 	right:80px;
-    max-width: 200px;
-    max-height: 100px;
-	background-color:rgb(7, 7, 7);
-	color:rgb(255, 255, 255);
-	border-radius:10px;
-	text-align:center;
-	box-shadow: 2px 2px 3px rgb(116, 64, 146);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
 
   }
 
 .optionBox2{
     float:right;
-    display: block;
-    position: relative;
-    z-index: 5;
-    cursor:pointer;
 	width:260px;
 	height:60px;
     left: -280px;
 	bottom:130px;
 	right:80px;
-    max-width: 200px;
-    max-height: 100px;
-	background-color:rgb(7, 7, 7);
-	color:rgb(255, 255, 255);
-	border-radius:10px;
-	text-align:center;
-	box-shadow: 2px 2px 3px rgb(116, 64, 146);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+
   }
  
