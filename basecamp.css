@@ -1,67 +1,115 @@
 *{padding:0;margin:0;}
 
 body{
-	font-family:Verdana, Geneva, sans-serif;
+    background-image: url("assets/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
 }
 
 .background{
+    z-index: 1;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:10px;
+    width: 50%;
+    height:400px;
     background-image: url(/assets/background.jpg);
     background-repeat:no-repeat;
     background-size:contain;
-    height:400px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-    margin-top: 25px;
-
   }
 
 
-.my-float{
-	margin-top:22px;
-    
-}
-
-
-
 .optionBoxes{
-    display:block;
     position:relative;
-    z-index: 5;
-    cursor:pointer;
-    max-width: 200px;
-    max-height: 100px;
-	background-color:rgb(7, 7, 7);
-	color:rgb(255, 255, 255);
-	border-radius:10px;
-	text-align:center;
-	box-shadow: 2px 2px 3px rgb(116, 64, 146);
+    float:left;
+    z-index: 1;
+    display:flex;
+    bottom:140px;
+	right:80px;
+    max-width: 150px;
+    max-height: 30px;
+    border-radius:10px;
+    width:260px;
+	height:60px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color:rgb(7, 7, 7);
+	color:rgb(169, 141, 175);
+	text-align:center;
+    align-items:center;
+	box-shadow: 2px 2px 3px rgb(116, 64, 146);
+    cursor:pointer;
+    animation: fadeIn ease 5s;
 }
 
-
 .optionBox1{
-    float:left;
-	width:260px;
-	height:60px;
     left: 275px;
-	bottom:130px;
-	right:80px;
-
+	right: 80px; 
   }
 
 .optionBox2{
-    float:right;
-	width:260px;
-	height:60px;
-    left: -280px;
-	bottom:130px;
-	right:80px;
-
+    left: 395px;
   }
+
+.narratorBox{
+    position:relative;
+    z-index: 4;
+    float:left;
+    display:flex;
+    bottom: 208px;
+    left: -88px;
+    width:50%;
+    height: 130px;
+    border-radius:10px;
+    background-color: black;
+    opacity: 50%;
+}
+
+.narratorText{
+    color: Pink; 
+    font-family: "Courier";
+    font-size: 15px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 2s steps(60, end); 
+}
  
+@keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.inventoryBg{
+    position:relative;
+    z-index:2;
+    display:flex;
+    bottom: 400px;
+    left: -350px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width:175px;
+    height:50px;
+    background-image: url(/assets/char3.jpg);
+  }
+
+  .inventoryItems{
+    border-radius:5px;
+    border-color:red solid 1px;
+  }

@@ -1,0 +1,14 @@
+
+{
+    "shroomieNames":[
+        {"ComShroom":"Compassion Shroomie"},
+        {"StrShroom":"Strength Shroomie"},
+        {"SleShroom":"Sleepy Shroomie"},
+        {"AgiShroom":"Agility Shroomie"},
+        {"HunShroom":"Hungry Shroomie"},
+        {"IntShroom":"Intelligent Shroomie"},
+        {"SilShroom":"Silent Shroomie"},
+        {"HapShroom":"Happy Shroomie"},
+        {"LigShroom":"Light Shroomie"}
+    ]
+}
