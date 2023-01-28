@@ -1,0 +1,67 @@
+*{padding:0;margin:0;}
+
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+
+.background{
+    background-image: url(/assets/background.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:400px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    margin-top: 25px;
+
+  }
+
+
+.my-float{
+	margin-top:22px;
+    
+}
+
+
+
+.optionBoxes{
+    display:block;
+    position:relative;
+    z-index: 5;
+    cursor:pointer;
+    max-width: 200px;
+    max-height: 100px;
+	background-color:rgb(7, 7, 7);
+	color:rgb(255, 255, 255);
+	border-radius:10px;
+	text-align:center;
+	box-shadow: 2px 2px 3px rgb(116, 64, 146);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.optionBox1{
+    float:left;
+	width:260px;
+	height:60px;
+    left: 275px;
+	bottom:130px;
+	right:80px;
+
+  }
+
+.optionBox2{
+    float:right;
+	width:260px;
+	height:60px;
+    left: -280px;
+	bottom:130px;
+	right:80px;
+
+  }
+ 
