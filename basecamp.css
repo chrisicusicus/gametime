@@ -1,4 +1,4 @@
-*{padding:0;margin:0;}
+/* *{padding:0;margin:0;}
 
 body{
     background-image: url("assets/background.jpg");
@@ -6,27 +6,33 @@ body{
     background-size:cover;
     font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
-}
+} */
 
 .background{
     z-index: 1;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius:10px;
-    width: 50%;
-    height:400px;
-    background-image: url(/assets/background.jpg);
+    display:flex;
+    height:500px;
+    justify-content: center;
+    background-image: url(/assets/basecampbg.PNG);
     background-repeat:no-repeat;
-    background-size:contain;
+    background-position: center;
   }
 
+  #char1{
+    position:relative;
+    display:flex;
+    z-index: 6;
+    display: none;
+    left:200px;
+    top:250px;
+    height:200px;
+  }
 
 .optionBoxes{
     position:relative;
-    float:left;
-    z-index: 1;
+    z-index: 7;
     display:flex;
+    justify-content:center;
     bottom:140px;
 	right:80px;
     max-width: 150px;
@@ -44,7 +50,7 @@ body{
     align-items:center;
 	box-shadow: 2px 2px 3px rgb(116, 64, 146);
     cursor:pointer;
-    animation: fadeIn ease 5s;
+    animation: fadeIn ease 10s;
 }
 
 .optionBox1{
@@ -54,15 +60,14 @@ body{
 
 .optionBox2{
     left: 395px;
+    right: 10px;
   }
 
 .narratorBox{
     position:relative;
     z-index: 4;
-    float:left;
     display:flex;
-    bottom: 208px;
-    left: -88px;
+    justify-content:center;
     width:50%;
     height: 130px;
     border-radius:10px;
@@ -94,9 +99,9 @@ body{
      }
 }
 
-.inventoryBg{
+/* .inventoryBg{
     position:relative;
-    z-index:2;
+    z-index:3;
     display:flex;
     bottom: 400px;
     left: -350px;
@@ -113,3 +118,19 @@ body{
     border-radius:5px;
     border-color:red solid 1px;
   }
+ */
+
+ #chardiv{
+    position:relative;
+    z-index: 5;
+    display:flex;
+    top:250px;
+    left:30px;
+    width:50px;
+    height:50px;
+    border-radius:10px;
+    opacity: 50%;
+    border: 3px solid red;
+ }
+
+ 
