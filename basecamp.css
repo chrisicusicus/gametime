@@ -74,6 +74,21 @@ body{
     right: 100px;
     left:300px;
   }
+.optionBox3{
+  left:100px;
+  display:none;
+}
+
+.optionBox4{
+  left:300px;
+  right:100px;
+  display:none;
+}
+
+.optionBox5{
+  left:200px;
+  display:none;
+}
 /* 
 .narratorBox{
     position: absolute;
