@@ -10,24 +10,37 @@
 </head>
 <body>
     <script src="basecamp.js"></script>
-
     <div id="bg" class="background">
-    <div id="chardiv" alt="what is this..?">test </div>
-    <img src="./assets/char1.PNG" id="char1" alt="character1">
-    
-    <div id="NarratorBox" class="narratorBox"><div id="NarratorText" class="narratorText">it looks like some people have been living here...</div>
+        <img src="./assets/char1.PNG" id="char1" alt="character1">
+        <div id="chardiv" alt="what is this..?">
+            <button onclick="block()">test</button>
+        </div>
+
+
+<div id="NarratorText" class="NarratorText">words</div>
+
+<div id="optionBoxes">
+    <div id="option1" class="optionBoxes optionBox1">
+    <button onclick="newText()">Continue</button>
 </div>
-    </div>
+<div id="option2" class="optionBoxes optionBox2">
+    <button onclick="option1()">Go Back</button>
+</div>
+</div>
+
+
+<!-- 
+<a href="woodsFront.html" class="optionBoxes optionBox1">click me1
+</a>
+
+<a href="woodsFront.html" class="optionBoxes optionBox2">click me2
+</a>
+    </div> -->
 
     <!-- <div id="inv" class="inventoryBg"></div>
     <div id="invItems" class="inventoryItems"></div>
      -->
 
-        <a href="woodsFront.html" class="optionBoxes optionBox1">click me1
-        </a>
-    
-        <a href="woodsFront.html" class="optionBoxes optionBox2">click me2
-        </a>
 
 </body>
 </html>
