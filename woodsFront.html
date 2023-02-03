@@ -4,34 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A forest...?</title>
+    <title>A span of forest</title>
     <link rel="stylesheet" href="woodsFront.css">
+
 </head>
 <body>
     <script src="woodsFront.js"></script>
-    <div id="bg" class="background"></div>
 
-    <a href="#" class="optionBoxes optionBox1">click me1</a>
+    <div id="invContainer" id="invContainer">
+        <div id="invShroomies">
+            <div id="shroomie1"></div>
+            <div id="shroomie2"></div>
+            <div id="shroomie3"></div>
+            <div id="shroomie4"></div>
+            <div id="shroomie5"></div>
+            <div id="shroomie6"></div>
+            <div id="shroomie7"></div>
+            <div id="shroomie8"></div>
+            <div id="shroomie9"></div>
 
-    <a href="#" class="optionBoxes optionBox2">click me2</a>
-
-
-     <img id="inventory" alt="inv" src="assets/inventory.jpg" class="inventory">
-
-     <div class="div1">
-        <a href = "http://google.com">
-            <span class="area1"></span>
-        </a>
+        </div>
     </div>
-    
-    <!-- camp 2 location -->
-    
-    <div class = "div2">
-        <a href = "http://youtube.com">
-            <span class = "area2"></span>
-        </a>
-    
 
+
+    <div id="narratorBox">
+        
+    <div id="NarratorText" class="NarratorText"><p>You just woke up.  To your right, you see a car which has crashed into a ditch.  It looks familiar?
+        There's a span of forest before you.  There are two paths; one with a light, one in darkness.  Which path do you take?</p>
+    </div>
+    </div>
+
+    <div id="bg" class="background">
+        <img src="./assets/char1.PNG" id="char1" alt="character1">
+        <div id="chardiv" alt="what is this..?">
+            <button onclick="block()">test</button>
+        </div>
+
+
+<div id="optionBoxes">
+    <div id="option1" class="optionBoxes optionBox1">
+    <button onclick="location.href='darkPath.html';">Dark Path</button>
+</div>
+<div id="option2" class="optionBoxes optionBox2">
+    <button onclick="location.href='basecamp.html';">Light Path</button>
+</div>
+</div>
 
 </body>
 </html>

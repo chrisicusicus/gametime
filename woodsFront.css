@@ -1,105 +1,159 @@
-*{padding:0;margin:0;}
+/* *{padding:0;margin:0;}
 
 body{
-	font-family:Verdana, Geneva, sans-serif;
+    background-image: url("assets/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
-}
+} */
+
 
 .background{
-    background-image: url(/assets/background.jpg);
+    display:static;
+    height:500px;
+    background-image: url(/assets/basecampbg.PNG);
     background-repeat:no-repeat;
-    background-size:contain;
-    height:400px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-    margin-top: 25px;
-
+    background-color: black;
   }
 
 
-.my-float{
-	margin-top:22px;
-    
+#invContainer{
+    position:absolute;
+    display: block;
+    left: 510px;
+    background-image: url(/assets/inventory.png);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 100%;
 }
 
 
+  #chardiv{
+    position:static;
+    z-index: 4;
+    top: 250px;
+    right: 400px;
+    bottom: 300px;
+    left: 200px;
+    display:block;
+    opacity: 20%;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid red;
+ }
+
+  #char1{
+    position:static;
+    display:block;
+    z-index: 6;
+    display: none;
+    left:200px;
+    top:250px;
+    height:200px;
+  }
 
 .optionBoxes{
-    display:block;
-    position:relative;
-    z-index: 5;
-    cursor:pointer;
-    max-width: 200px;
-    max-height: 100px;
-	background-color:rgb(7, 7, 7);
-	color:rgb(255, 255, 255);
-	border-radius:10px;
-	text-align:center;
-	box-shadow: 2px 2px 3px rgb(116, 64, 146);
+    position:absolute;
+    z-index: 7;
+    display:inline-block;
+    top: 340px;
+    width:260px;
+	height:60px;
+    max-width: 150px;
+    max-height: 30px;
+    border-radius:10px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color:rgba(7, 7, 7, 0.504);
+	  color:rgb(146, 138, 95);
+	  text-align:center;
+    align-items:center;
+	  box-shadow: 2px 2px 3px rgba(42, 47, 41, 0.918);
+    cursor: pointer;
+    animation: fadeIn ease 10s;
+
 }
 
-
 .optionBox1{
-    float:left;
-	width:260px;
-	height:60px;
-    left: 275px;
-	bottom:130px;
-	right:80px;
-
+    left: 100px;
   }
 
 .optionBox2{
-    float:right;
-	width:260px;
-	height:60px;
-    left: -280px;
-	bottom:130px;
-	right:80px;
-
-  }
- /* area 1 */
-
-.div1{
-    position: relative;
-    width:20px;
-    height:20px;
-    top:30;
-    left:40;
-    border: 1px solid red;
-
-}
-
-.area1 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 30;
-    left: 40;
-    z-index: 9;
+    right: 100px;
+    left:300px;
   }
 
-  /* area 2 */
-
-  .div2{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    bottom: 45px;
-    border: 1px solid blue;
+.narratorBox{
+    position: absolute;
+    z-index: 4;
+    display: block;
+    top: 330px;
+    right: 75px;
+    left: 75px;
+    height: 50px;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    background-color: black;
+    opacity: 50%;
 }
 
-.area2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 100;
-    left: 100;
-    z-index: 9;
+.NarratorText{
+    position:absolute;
+    display:block;
+    top: 200px;
+    align-items: center;
+    color: Pink; 
+    font-family: "Courier";
+    font-size: 12px;
+    margin: 10px 0 0 10px;
+    white-space:normal;
+    padding-top: 50px;
+    padding-left:3px;
+    overflow: hidden;
+    width: 40em;
+    max-height: 100px;
+    animation: fadeIn ease 3s;
+}
+ 
+  
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+button{
+  background-color:transparent;
+  border:none;
+  color: pink;
+  font-size: 12px;
+}
+
+
+/* .inventoryBg{
+    position:relative;
+    z-index:3;
+    display:flex;
+    bottom: 400px;
+    left: -350px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width:175px;
+    height:50px;
+    background-image: url(/assets/char3.jpg);
+  }
+
+  .inventoryItems{
+    border-radius:5px;
+    border-color:red solid 1px;
   }

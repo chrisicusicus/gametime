@@ -1,26 +1,23 @@
-.introImg{
-  position: absolute;
-  z-index:1;
-  top: 50px;
-  right: 200px;
-  display:block;
-  width: 400px;
-  height: 400px;
-  background-image: url('./assets/IMG_1372.PNG');
-  background-repeat: no-repeat;
-  background-size:cover;
 
+
+.background{
+  display:static;
+  height:500px;
+  background-image: url(/assets/basecampbg.PNG);
+  background-repeat:no-repeat;
+  background-color: black;
 }
 
 
-.start{
+button{
   position: absolute;
   z-index:2;
-  top: 400px;
-  right: 300px;
-  display: block;
+  top: 300px;
+  right: 600px;
   width: 100px;
   height: 20px;
   background-color: transparent;
+  border:none;
+  cursor:pointer;
 
 }
