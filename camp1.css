@@ -1,0 +1,166 @@
+/* *{padding:0;margin:0;}
+
+body{
+    background-image: url("assets/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+} */
+
+
+.background{
+    display:static;
+    height:500px;
+    background-image: url(/assets/camp1.PNG);
+    background-repeat:no-repeat;
+    background-color: black;
+  }
+
+  #chardiv{
+    position:static;
+    z-index: 4;
+    top: 250px;
+    right: 400px;
+    bottom: 300px;
+    left: 200px;
+    display:block;
+    opacity: 20%;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid red;
+ }
+
+  #char1{
+    position:static;
+    display:block;
+    z-index: 6;
+    display: none;
+    left:200px;
+    top:250px;
+    height:200px;
+  }
+
+.optionBoxes{
+    position:absolute;
+    z-index: 7;
+    display:inline-block;
+    top: 340px;
+    width:260px;
+	  height:60px;
+    max-width: 150px;
+    max-height: 30px;
+    border-radius:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:rgba(7, 7, 7, 0.504);
+	  color:rgb(146, 138, 95);
+	  text-align:center;
+    align-items:center;
+	  box-shadow: 2px 2px 3px rgba(42, 47, 41, 0.918);
+    cursor:pointer;
+    animation: fadeIn ease 10s;
+
+}
+
+.optionBox1{
+    left: 100px;
+  }
+
+.optionBox2{
+    right: 100px;
+    left:300px;
+  }
+.optionBox3{
+  left:100px;
+  display:none;
+}
+
+.optionBox4{
+  left:300px;
+  right:100px;
+  display:none;
+}
+
+.optionBox5{
+  left:200px;
+  display:none;
+}
+/* 
+.narratorBox{
+    position: absolute;
+    z-index: 4;
+    display: block;
+    top: 330px;
+    right: 75px;
+    left: 75px;
+    height: 50px;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    background-color: black;
+    opacity: 50%;
+} */
+
+.NarratorText{
+    position:absolute;
+    display:block;
+    top: 200px;
+    align-items: center;
+    color: Pink; 
+    font-family: "Courier";
+    font-size: 12px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    padding-top: 30px;
+    overflow: hidden;
+    width: 40em;
+    height: 20em;
+    animation: type 3s steps(60, end); 
+}
+ 
+@keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/* .inventoryBg{
+    position:relative;
+    z-index:3;
+    display:flex;
+    bottom: 400px;
+    left: -350px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width:175px;
+    height:50px;
+    background-image: url(/assets/char3.jpg);
+  }
+
+  .inventoryItems{
+    border-radius:5px;
+    border-color:red solid 1px;
+  }
+ */
+
+
+button{
+  background-color:transparent;
+  border:none;
+  color: pink;
+  font-size: 12px;
+}
+

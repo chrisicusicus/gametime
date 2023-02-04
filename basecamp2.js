@@ -39,6 +39,7 @@ function block() {
       $(this).replaceWith($("option3"))
     });
 
+
   }
 
   function option2(opt2){
@@ -54,32 +55,9 @@ function block() {
     if(option4.style.display = 'inline-block'){
       option4.style.display = 'none';
     }
-    // if(option3.style.display !== 'inline-block') {
-    //   option3.style.display = 'none';
-    // }
-    // if(option4.style.display !== 'inline-block'){
-    //   option4.style.display = 'none';
-    // }
     if(option4.style.display = 'none'){
       option5.style.display = 'inline-block';
     }
-    // $("option2").click(function(){
-    //   $(this).replaceWith($("option5"));
-    // });
+
 
   }
-
-
-  
-function onload(){
-  let shroomed = document.getElementbyid('shroomie1');
-  let shroomkey = window.localStorage.key(1);
-  let door = document.getElementbyId('doordiv');
-
-  if (shroomkey=1){
-    doordiv.style.display='block';
-  }
-  if (shroomed.style.display = 'inline-block'){
-      window.localStorage.setitem('shroomkey','Hungry Shroomie');
-  }
-}
