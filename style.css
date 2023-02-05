@@ -1,4 +1,6 @@
-
+body{
+  background:black;
+}
 
 .background{
   display:static;
@@ -13,11 +15,57 @@ button{
   position: absolute;
   z-index:2;
   top: 300px;
-  right: 600px;
+  right: 550px;
   width: 100px;
   height: 20px;
   background-color: transparent;
   border:none;
   cursor:pointer;
+  font-size: 20px;
+  font-family:cursive;
+  color:rgb(250, 153, 74);
 
+}
+
+h1{
+  position: absolute;
+  left: 50px;
+  bottom: 75px;
+  display: block;
+  font-family: 'Gloria Hallelujah', serif;
+  font-size: 80px;
+  color:rgb(72, 102, 141);
+}
+
+
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:transparent;
+}
+
+.text{
+  font-size: 70px;
+  letter-spacing: 10px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 400%;
+  animation: move 5s ease infinite;
+  background-image: linear-gradient( 68.7deg,  rgb(82, 133, 24) 13.2%, rgb(36, 59, 39) 29.8%, rgb(80, 155, 37) 48.9%, rgb(161, 184, 32) 68.2%, rgb(82, 133, 24) 86.4% );
+}
+
+@keyframes move {
+  0%,100%{
+      background-position: 100% 0%;
+  }
+
+  100%{
+      background-position: 0% 100%;
+  }
 }

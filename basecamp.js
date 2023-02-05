@@ -1,6 +1,13 @@
 const textNarrator = document.getElementById('NarratorText')
 const textOptions = document.getElementById('optionBoxes')
 const optionBox1 = document.getElementById('option1')
+let backbutton = document.getElementById('option1');
+
+
+  function newText(){
+    document.getElementById("NarratorText").innerHTML = "new text";
+  }
+
 
 function block() {
     let div = document.getElementById('char1');
@@ -34,7 +41,6 @@ function block() {
       option4.style.display = 'inline-block';
     }
 
-
     $("option1").click(function(){
       $(this).replaceWith($("option3"))
     });
@@ -54,21 +60,11 @@ function block() {
     if(option4.style.display = 'inline-block'){
       option4.style.display = 'none';
     }
-    // if(option3.style.display !== 'inline-block') {
-    //   option3.style.display = 'none';
-    // }
-    // if(option4.style.display !== 'inline-block'){
-    //   option4.style.display = 'none';
-    // }
+
     if(option4.style.display = 'none'){
       option5.style.display = 'inline-block';
     }
-    // $("option2").click(function(){
-    //   $(this).replaceWith($("option5"));
-    // });
-
   }
-
 
   
 function onload(){
@@ -83,3 +79,37 @@ function onload(){
       window.localStorage.setitem('shroomkey','Hungry Shroomie');
   }
 }
+
+
+
+function onload(){
+  let div = document.getElementbyid('shroomie1');
+  let shroomkey = window.localStorage.key(1);
+  if (div.style.display = 'inline-block'){
+      window.localStorage.setitem('shroomkey','Hungry Shroomie');
+
+  }
+}
+
+
+
+
+function shroomieGet(){
+  let div = document.getElementById('shroomie1');
+  let shroomkey = window.localStorage.key(1);
+  
+  document.getElementById("NarratorText").innerHTML="You found one!";
+  
+      if (div.style.display = 'none'){
+          div.style.display = 'inline-block';
+      }
+      alert("you got a shroomie!");
+  
+      if(div.style.display = 'inline-block'){
+          window.localStorage.setItem('shroomie1', 'shroomie');
+      }
+      
+  }
+  
+  
+  

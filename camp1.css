@@ -1,13 +1,6 @@
-/* *{padding:0;margin:0;}
-
 body{
-    background-image: url("assets/background.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    font-family:Verdana, Geneva, sans-serif;
-	font-size:12px;
-} */
-
+  background-color:black;
+}
 
 .background{
     display:static;
@@ -17,19 +10,18 @@ body{
     background-color: black;
   }
 
-  #chardiv{
-    position:static;
+  #shroomie0{
+    position: absolute;
     z-index: 4;
-    top: 250px;
-    right: 400px;
+    top: 210px;
+    left: 50px;
     bottom: 300px;
-    left: 200px;
     display:block;
     opacity: 20%;
-    width: 100px;
+    width: 50px;
     height: 50px;
     border-radius: 10px;
-    border: 3px solid red;
+    border: 3px solid rgb(0, 255, 204);
  }
 
   #char1{
@@ -89,26 +81,12 @@ body{
   left:200px;
   display:none;
 }
-/* 
-.narratorBox{
-    position: absolute;
-    z-index: 4;
-    display: block;
-    top: 330px;
-    right: 75px;
-    left: 75px;
-    height: 50px;
-    justify-content:center;
-    align-items:center;
-    border-radius:10px;
-    background-color: black;
-    opacity: 50%;
-} */
 
 .NarratorText{
     position:absolute;
     display:block;
-    top: 200px;
+    top: 250px;
+    left: 50px;
     align-items: center;
     color: Pink; 
     font-family: "Courier";
@@ -135,28 +113,6 @@ body{
      }
 }
 
-/* .inventoryBg{
-    position:relative;
-    z-index:3;
-    display:flex;
-    bottom: 400px;
-    left: -350px;
-    margin-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    width:175px;
-    height:50px;
-    background-image: url(/assets/char3.jpg);
-  }
-
-  .inventoryItems{
-    border-radius:5px;
-    border-color:red solid 1px;
-  }
- */
-
-
 button{
   background-color:transparent;
   border:none;
@@ -164,3 +120,26 @@ button{
   font-size: 12px;
 }
 
+
+#invContainer{
+  position:absolute;
+  top: 7px;
+  left: 510px;
+  background-image: url(/assets/inventory.png);
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 85%;
+  
+}
+
+.shroomie1{
+  position:absolute;
+  z-index:7;
+  top: 100px;
+  right: 200px;
+  left: 600px;
+  display: none;
+  height: 50px;
+  width: 50px;
+  background-image:url(/assets/HunShroomie.PNG);
+}

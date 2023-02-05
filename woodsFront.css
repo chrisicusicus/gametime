@@ -1,12 +1,4 @@
-/* *{padding:0;margin:0;}
 
-body{
-    background-image: url("assets/background.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    font-family:Verdana, Geneva, sans-serif;
-	font-size:12px;
-} */
 body{
     background-color:black;
 }
@@ -90,20 +82,6 @@ body{
     left:300px;
   }
 
-.narratorBox{
-    position: absolute;
-    z-index: 4;
-    display: block;
-    top: 330px;
-    right: 75px;
-    left: 75px;
-    height: 50px;
-    justify-content:center;
-    align-items:center;
-    border-radius:10px;
-    background-color: black;
-    opacity: 50%;
-}
 
 .NarratorText{
     position:absolute;
@@ -140,23 +118,3 @@ button{
   font-size: 12px;
 }
 
-
-/* .inventoryBg{
-    position:relative;
-    z-index:3;
-    display:flex;
-    bottom: 400px;
-    left: -350px;
-    margin-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    width:175px;
-    height:50px;
-    background-image: url(/assets/char3.jpg);
-  }
-
-  .inventoryItems{
-    border-radius:5px;
-    border-color:red solid 1px;
-  }
