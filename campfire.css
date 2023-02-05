@@ -4,7 +4,7 @@ body{
 .background{
     display:static;
     height:500px;
-    background-image: url(/assets/IMG_1372.PNG);
+    background-image: url(/assets/campfire.PNG);
     background-repeat:no-repeat;
     background-color: black;
   }
@@ -29,7 +29,7 @@ body{
     display: none;
     height: 50px;
     width: 50px;
-    background-image:url(/assets/HunShroomie.PNG);
+    background-image:url(/assets/ShroomHun.PNG);
  }
 
 

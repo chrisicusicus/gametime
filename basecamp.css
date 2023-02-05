@@ -26,13 +26,15 @@ body{
  }
 
   #char1{
-    position:static;
-    display:block;
+    position:absolute;
     z-index: 6;
     display: none;
-    left:200px;
-    top:250px;
+    top: 95px;
+    right: 200px;
+    bottom:210px;
+    left:300px;
     height:200px;
+    opacity: 80%;
   }
 
 .optionBoxes{
@@ -86,7 +88,8 @@ body{
 .NarratorText{
     position:absolute;
     display:block;
-    top: 200px;
+    top: 250px;
+    left: 55px;
     align-items: center;
     color: Pink; 
     font-family: "Courier";

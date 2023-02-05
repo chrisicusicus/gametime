@@ -82,22 +82,27 @@ body{
   display:none;
 }
 
+
+.NarratorBox{
+  position:absolute;
+  top: 220px;
+  right: 40px;
+  bottom: 100px;
+  left: 50px;
+  display:block;
+}
+
 .NarratorText{
-    position:absolute;
-    display:block;
-    top: 250px;
-    left: 50px;
-    align-items: center;
-    color: Pink; 
-    font-family: "Courier";
-    font-size: 12px;
-    margin: 10px 0 0 10px;
-    white-space: nowrap;
-    padding-top: 30px;
-    overflow: hidden;
-    width: 40em;
-    height: 20em;
-    animation: type 3s steps(60, end); 
+  color: Pink; 
+  font-family: "Courier";
+  font-size: 12px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: auto;
+  padding-top: 30px;
+  width: 40em;
+  height: 20em;
+  animation: type 3s steps(60, end); 
 }
  
 @keyframes type{ 

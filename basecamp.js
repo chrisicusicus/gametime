@@ -9,13 +9,6 @@ let backbutton = document.getElementById('option1');
   }
 
 
-function block() {
-    let div = document.getElementById('char1');
-    if (div.style.display !== 'none') {
-      div.style.display = 'block';
-    }
-  
-  };
 
   function option1(opt1){
     let option1 = document.getElementById('option1');
@@ -67,49 +60,171 @@ function block() {
   }
 
   
-function onload(){
-  let shroomed = document.getElementbyid('shroomie1');
-  let shroomkey = window.localStorage.key(1);
-  let door = document.getElementbyId('doordiv');
+// function onload(){
+//   let shroomed = document.getElementbyid('shroomie1');
+//   let shroomkey = window.localStorage.key(1);
+//   let door = document.getElementbyId('doordiv');
 
-  if (shroomkey=1){
-    doordiv.style.display='block';
-  }
-  if (shroomed.style.display = 'inline-block'){
-      window.localStorage.setitem('shroomkey','Hungry Shroomie');
-  }
-}
-
-
-
-function onload(){
-  let div = document.getElementbyid('shroomie1');
-  let shroomkey = window.localStorage.key(1);
-  if (div.style.display = 'inline-block'){
-      window.localStorage.setitem('shroomkey','Hungry Shroomie');
-
-  }
-}
+//   if (shroomkey=1){
+//     doordiv.style.display='block';
+//   }
+//   if (shroomed.style.display = 'inline-block'){
+//       window.localStorage.setitem('shroomkey','Hungry Shroomie');
+//   }
+// }
 
 
 
+
+
+
+
+
+
+
+
+// function onload(){
+//   let div = document.getElementbyid('shroomie1');
+//   let shroomkey = window.localStorage.key(1);
+//   if (div.style.display = 'inline-block'){
+//       window.localStorage.setitem('shroomkey','Hungry Shroomie');
+
+//   }
+// }
 
 function shroomieGet(){
   let div = document.getElementById('shroomie1');
-  let shroomkey = window.localStorage.key(1);
-  
+  let shroomkey = window.sessionStorage.setItem('shroomkey', 1);
+
+
+
   document.getElementById("NarratorText").innerHTML="You found one!";
   
       if (div.style.display = 'none'){
           div.style.display = 'inline-block';
       }
       alert("you got a shroomie!");
-  
-      if(div.style.display = 'inline-block'){
-          window.localStorage.setItem('shroomie1', 'shroomie');
-      }
+      
       
   }
   
+  function shroomieCheck(){
+  let shroomie1 = document.getElementById('shroomie1');
+  let shroomkey = window.sessionStorage.getItem('shroomkey',1);
+
+  if (shroomkey == 1){
+    shroomie1.style.display='block';
+  }
+
   
+
+}
+
   
+  // function shroomieGet(){
+  //   let ShroomieArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  //   let ShroomiesGot = ShroomieArray.length;
+  //   let ShroomieHun = document.getelementbyid('shroomiehun.png');
+
+  //   for(let i=0; i < length; i++){
+  //     ShroomieArray[i]+=1 
+  //   }
+    
+  //   if(ShroomiesGot = )
+
+
+  // }
+
+  // function bgChange(){
+
+  // }
+
+  // sessionStorage.getItem('key');
+  // if (window.sessionStorage.key='hun'){
+  //   ShroomieHun.style.display='block';
+  // }
+
+
+
+
+
+// function shroomieGet(shroomieCheck){
+//   let shroomie1 = document.getElementById('shroomie1');
+//   let shroomkey = sessionStorage.getItem('shroomkey');
+
+//   window.sessionStorage.setItem=('shroomkey', 1);
+
+//   if (shroomkey=1){
+//     shroomie1.style.display='block';
+//   }
+  
+//   document.getElementById("NarratorText").innerHTML="You found one!";
+//   alert("you got a shroomie!");
+
+//       shroomieCheck()
+  
+//     }
+
+    // export default function useToken() {
+    //   const getToken = () => {
+    //     const tokenString = sessionStorage.getItem('token');
+    //     const userToken = JSON.parse(tokenString);
+    //     return userToken?.token;
+    //   };
+   
+    //   const [token, setToken] = useState(getToken());
+   
+    //   const saveToken = (userToken) => {
+    //     sessionStorage.setItem('token', JSON.stringify(userToken));
+    //     setToken(userToken.token);
+    //   };
+   
+   
+    //   return {
+    //     setToken: saveToken,
+    //     token,
+    //   };
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+//   function init() {
+//     let storedMode = sessionStorage.getItem('mode');
+//     if (!storedMode) {
+//         storedMode = DEFAULT_MODE;
+//         sessionStorage.setItem('mode', DEFAULT_MODE);
+//     }
+//     setMode(storedMode);
+// }
+
+// function setMode(mode = DEFAULT_MODE) {
+//     if (mode === DARK_MODE) {
+//         btn.textContent = SUN;
+//         document.body.classList.add(DARK_MODE);
+
+//     } else if (mode === LIGHT_MODE) {
+//         btn.textContent = MOON;
+//         document.body.classList.remove(DARK_MODE);
+//     }
+// }
