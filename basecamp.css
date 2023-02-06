@@ -10,12 +10,12 @@ body{
     background-color: black;
   }
 
-  #chardiv{
+  /* #chardiv{
     position:static;
     z-index: 4;
-    top: 250px;
+    top: 280px;
     right: 400px;
-    bottom: 300px;
+    bottom: 280px;
     left: 200px;
     display:block;
     opacity: 20%;
@@ -23,18 +23,18 @@ body{
     height: 50px;
     border-radius: 10px;
     border: 3px solid red;
- }
+ } */
 
   #char1{
     position:absolute;
     z-index: 6;
     display: none;
-    top: 95px;
+    top:105px;
     right: 200px;
-    bottom:210px;
+    bottom:10px;
     left:300px;
     height:200px;
-    opacity: 80%;
+    opacity: 100%;
   }
 
 .optionBoxes{
@@ -88,7 +88,7 @@ body{
 .NarratorText{
   position:absolute;
   display:block;
-  top: 200px;
+  top: 240px;
   align-items: center;
   color: Pink; 
   font-family: "Courier";
@@ -125,12 +125,13 @@ button{
 
 #invContainer{
   position:absolute;
+  z-index:6;
   top: 7px;
   left: 510px;
   background-image: url(/assets/inventory.png);
   background-repeat: no-repeat;
   width: 90%;
-  height: 85%;
+  height: 390px;
   
 }
 

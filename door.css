@@ -1,0 +1,189 @@
+body{
+    background:black;
+  }
+  
+  .background{
+    display:static;
+    height:500px;
+    background-image: url(/assets/thedoor.PNG);
+    background-repeat:no-repeat;
+    background-color: black;
+
+  }
+    #campfire{
+      position:absolute;
+      z-index: 4;
+      top: 250px;
+      right: 400px;
+      bottom: 300px;
+      left: 215px;
+      display:block;
+      opacity: 20%;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+   }
+  
+   #camp1{
+      position:absolute;
+      z-index: 4;
+      top:200px;
+      left: 65px;
+      display:block;
+      opacity: 20%;
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+   }
+  /* 
+   #camp2{
+      position:absolute;
+      z-index: 4;
+      top:30px;
+      left: 250px;
+      display:block;
+      opacity: 20%;
+      width: 80px;
+      height: 100px;
+   } */
+  
+  
+   .NarratorText{
+    position:absolute;
+    display:block;
+    top: 250px;
+    align-items: center;
+    color: Pink; 
+    font-family: "Courier";
+    font-size: 12px;
+    margin: 10px 0 0 10px;
+    white-space:normal;
+    padding-top: 50px;
+    padding-left:3px;
+    overflow: hidden;
+    width: 40em;
+    max-height: 100px;
+    animation: fadeIn ease 3s;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+  }
+  
+  
+  button{
+    position: absolute;
+    top: 100px;
+    left: 190px;
+    background-color:transparent;
+    border:none;
+    font-family: 'gloria hallelujah';
+    color: pink;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #invContainer{
+    position:absolute;
+    z-index:6;
+    top: 7px;
+    left: 510px;
+    background-image: url(/assets/inventory.png);
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 390px;
+    
+  }
+  
+  .shroomie1{
+    position:absolute;
+    z-index:7;
+    top: 100px;
+    right: 200px;
+    left: 600px;
+    display: none;
+    height: 50px;
+    width: 50px;
+    background-image:url(/assets/ShroomHun.PNG);
+  }
+  
+  .shroomie2{
+    position:absolute;
+    z-index:7;
+    top: 200px;
+    right: 200px;
+    left: 600px;
+    display: none;
+    height: 50px;
+    width: 50px;
+    background-image:url(/assets/ShroomSle.PNG);
+  }
+  
+  #doordiv{
+    position:absolute;
+    z-index: 4;
+    top:10px;
+    left: 110px;
+    display:none;
+    opacity: 20%;
+    width: 80px;
+    height: 75px;
+    border-radius: 10px;
+  }
+
+  #endScreen{
+    position: absolute;
+    z-index:8;
+    display: none;
+    width: 500px;
+    height: 400px;
+    background-image: url(./assets/title.PNG);
+    animation: fadeIn ease 3s;
+}
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+
+  #endText{
+    position: absolute;
+    z-index: 9;
+    top: 150px;
+    left: 75px;
+    display: none;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    color: rgb(132, 161, 58);
+    animation: fadeIn ease 3s;
+}
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+
+
+
+p{
+    color:rgb(123, 123, 123);
+}

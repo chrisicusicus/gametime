@@ -12,17 +12,18 @@ body{
   }
 
 
-#invContainer{
+  #invContainer{
     position:absolute;
-    display: block;
+    z-index:6;
     top: 7px;
     left: 510px;
     background-image: url(/assets/inventory.png);
     background-repeat: no-repeat;
     width: 90%;
-    height: 85%;
-}
-
+    height: 390px;
+    
+  }
+  
 
   #chardiv{
     position:static;

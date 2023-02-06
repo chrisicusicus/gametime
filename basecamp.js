@@ -104,3 +104,18 @@ function shroomieGet2(){
       }
       alert("you got a shroomie!");  
   }
+
+  function finito(){
+    let button = document.getElementById('doorButton');
+    let endScreen = document.getElementById('endScreen');
+    let endText = document.getElementById('endText');
+
+    if(endScreen.style.display = 'none'){
+      endScreen.style.display = 'block';
+    }
+
+    if (endText.style.display = 'none'){
+      endText.style.display = 'block';
+    }
+
+  }

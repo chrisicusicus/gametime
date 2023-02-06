@@ -21,7 +21,7 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    border: 3px solid red;
+    cursor:pointer;
  }
 
  #camp1{
@@ -34,9 +34,9 @@ body{
     width: 100px;
     height: 50px;
     border-radius: 10px;
-    border: 3px solid red;
+    cursor:pointer;
  }
-
+/* 
  #camp2{
     position:absolute;
     z-index: 4;
@@ -46,15 +46,13 @@ body{
     opacity: 20%;
     width: 80px;
     height: 100px;
-    border-radius: 10px;
-    border: 3px solid red;
- }
+ } */
 
 
  .NarratorText{
   position:absolute;
   display:block;
-  top: 200px;
+  top: 250px;
   align-items: center;
   color: Pink; 
   font-family: "Courier";
@@ -95,7 +93,7 @@ button{
   background-image: url(/assets/inventory.png);
   background-repeat: no-repeat;
   width: 90%;
-  height: 85%;
+  height: 390px;
   
 }
 
@@ -133,5 +131,5 @@ button{
   width: 80px;
   height: 75px;
   border-radius: 10px;
-  border: 3px solid red;
+  cursor: pointer;
 }
