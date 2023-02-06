@@ -59,172 +59,48 @@ let backbutton = document.getElementById('option1');
     }
   }
 
+  function shroomieCheck(){
+    let shroomie1 = document.getElementById('shroomie1');
+    let shroomie2 = document.getElementById('shroomie2');
+    let shroomkey = window.sessionStorage.getItem('shroomkey',2);
+    let shroomkey2 = window.sessionStorage.getItem('shroomkey2',2);
+    let doordiv = document.getElementById('doordiv');
   
-// function onload(){
-//   let shroomed = document.getElementbyid('shroomie1');
-//   let shroomkey = window.localStorage.key(1);
-//   let door = document.getElementbyId('doordiv');
+    if (shroomkey == 2){
+      shroomie1.style.display='block';
+      
+    }
+  
+    if (shroomkey2 == 2){
+      shroomie2.style.display='block';
+    }
 
-//   if (shroomkey=1){
-//     doordiv.style.display='block';
-//   }
-//   if (shroomed.style.display = 'inline-block'){
-//       window.localStorage.setitem('shroomkey','Hungry Shroomie');
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-// function onload(){
-//   let div = document.getElementbyid('shroomie1');
-//   let shroomkey = window.localStorage.key(1);
-//   if (div.style.display = 'inline-block'){
-//       window.localStorage.setitem('shroomkey','Hungry Shroomie');
-
-//   }
-// }
+    if (shroomie1.style.display =='block' && shroomie2.style.display =='block'){
+      doordiv.style.display = 'block';
+    }
+  }
 
 function shroomieGet(){
   let div = document.getElementById('shroomie1');
-  let shroomkey = window.sessionStorage.setItem('shroomkey', 1);
-
-
+  window.sessionStorage.setItem('shroomkey', 2);
 
   document.getElementById("NarratorText").innerHTML="You found one!";
   
       if (div.style.display = 'none'){
           div.style.display = 'inline-block';
       }
-      alert("you got a shroomie!");
-      
-      
-  }
-  
-  function shroomieCheck(){
-  let shroomie1 = document.getElementById('shroomie1');
-  let shroomkey = window.sessionStorage.getItem('shroomkey',1);
-
-  if (shroomkey == 1){
-    shroomie1.style.display='block';
+      alert("you got a shroomie!");   
   }
 
+
+function shroomieGet2(){
+  let div = document.getElementById('shroomie2');
+  window.sessionStorage.setItem('shroomkey2', 2);
+
+  document.getElementById("NarratorText").innerHTML="You found one!";
   
-
-}
-
-  
-  // function shroomieGet(){
-  //   let ShroomieArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  //   let ShroomiesGot = ShroomieArray.length;
-  //   let ShroomieHun = document.getelementbyid('shroomiehun.png');
-
-  //   for(let i=0; i < length; i++){
-  //     ShroomieArray[i]+=1 
-  //   }
-    
-  //   if(ShroomiesGot = )
-
-
-  // }
-
-  // function bgChange(){
-
-  // }
-
-  // sessionStorage.getItem('key');
-  // if (window.sessionStorage.key='hun'){
-  //   ShroomieHun.style.display='block';
-  // }
-
-
-
-
-
-// function shroomieGet(shroomieCheck){
-//   let shroomie1 = document.getElementById('shroomie1');
-//   let shroomkey = sessionStorage.getItem('shroomkey');
-
-//   window.sessionStorage.setItem=('shroomkey', 1);
-
-//   if (shroomkey=1){
-//     shroomie1.style.display='block';
-//   }
-  
-//   document.getElementById("NarratorText").innerHTML="You found one!";
-//   alert("you got a shroomie!");
-
-//       shroomieCheck()
-  
-//     }
-
-    // export default function useToken() {
-    //   const getToken = () => {
-    //     const tokenString = sessionStorage.getItem('token');
-    //     const userToken = JSON.parse(tokenString);
-    //     return userToken?.token;
-    //   };
-   
-    //   const [token, setToken] = useState(getToken());
-   
-    //   const saveToken = (userToken) => {
-    //     sessionStorage.setItem('token', JSON.stringify(userToken));
-    //     setToken(userToken.token);
-    //   };
-   
-   
-    //   return {
-    //     setToken: saveToken,
-    //     token,
-    //   };
-    // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-//   function init() {
-//     let storedMode = sessionStorage.getItem('mode');
-//     if (!storedMode) {
-//         storedMode = DEFAULT_MODE;
-//         sessionStorage.setItem('mode', DEFAULT_MODE);
-//     }
-//     setMode(storedMode);
-// }
-
-// function setMode(mode = DEFAULT_MODE) {
-//     if (mode === DARK_MODE) {
-//         btn.textContent = SUN;
-//         document.body.classList.add(DARK_MODE);
-
-//     } else if (mode === LIGHT_MODE) {
-//         btn.textContent = MOON;
-//         document.body.classList.remove(DARK_MODE);
-//     }
-// }
+      if (div.style.display = 'none'){
+          div.style.display = 'inline-block';
+      }
+      alert("you got a shroomie!");  
+  }

@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="camp1.css">
 
 </head>
-<body>
-    <script src="basecamp.js"></script>
+<body onload="shroomieCheck()">
+        <script src="basecamp.js"></script>
         <div id="bg" class="background">
-            <div id="shroomie0" class="shroomie0" alt="what is this..?"></div>
-            <img src="./assets/char1.PNG" id="char1" alt="character1">
+            <div id="shroomie2div" class="shroomie2div" alt="what is this..?" onclick="shroomieGet2()"></div>
+            <div id="shroomie2" class="shroomie2"></div>
+            <img src="./assets/char1_ugh.PNG" id="char1" alt="character1">
 
 <div id="NarratorBox" class="NarratorBox">
     <div id="NarratorText" class="NarratorText">
@@ -25,24 +26,9 @@
     <div id="option1" class="optionBoxes optionBox1">
     <button onclick="location.href='basecamp2.html';">I will help</button>
 </div>
-<!-- <div id="option2" class="optionBoxes optionBox2">
-    <button onclick="option1()">Go Back</button>
 </div>
 
-<div id="option3" class="optionBoxes optionBox3">
-    <button onclick="option2()">"Are you... a talking mushroom?"</button>
-</div>
-
-<div id="option4" class="optionBoxes optionBox4">
-    <button onclick="option2()">"I must be going crazy.  Is there a hospital nearby?"</button>
-</div>
-
-<div id="option5" class="optionBoxes optionBox5">
-    <button onclick="location.href='camp1.html';">"Tea?..."</button>
-</div> -->
-
-</div>
-
+<div id="invContainer"></div>
 
 
 

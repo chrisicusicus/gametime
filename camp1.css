@@ -10,7 +10,7 @@ body{
     background-color: black;
   }
 
-  #shroomie0{
+  #shroomie2div{
     position: absolute;
     z-index: 4;
     top: 210px;
@@ -24,13 +24,40 @@ body{
     border: 3px solid rgb(0, 255, 204);
  }
 
+ .shroomie1{
+  position:absolute;
+  z-index:7;
+  top: 100px;
+  right: 200px;
+  left: 600px;
+  display: none;
+  height: 50px;
+  width: 50px;
+  background-image:url(/assets/ShroomHun.PNG);
+}
+
+ #shroomie2{
+  position: absolute;
+  z-index: 4;
+  top: 210px;
+  left: 550px;
+  bottom: 300px;
+  display:none;
+  opacity: 80%;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-image: url(./assets/ShroomSle.PNG)
+
+}
+
+
   #char1{
-    position:static;
+    position:absolute;
+    top: 90px;
+    right: 500px;
     display:block;
     z-index: 6;
-    display: none;
-    left:200px;
-    top:250px;
     height:200px;
   }
 
@@ -92,31 +119,33 @@ body{
   display:block;
 }
 
-.NarratorText{
+ .NarratorText{
+  position:absolute;
+  display:block;
+  align-items: center;
   color: Pink; 
   font-family: "Courier";
   font-size: 12px;
   margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: auto;
-  padding-top: 30px;
-  width: 40em;
-  height: 20em;
-  animation: type 3s steps(60, end); 
+  white-space:normal;
+  padding-top: 50px;
+  padding-left:3px;
+  overflow: hidden;
+  width: 33em;
+  max-height: 100px;
+  animation: fadeIn ease 3s;
 }
- 
-@keyframes type{ 
-    from { width: 0; } 
-  } 
-  
-  @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
+
 
 button{
   background-color:transparent;

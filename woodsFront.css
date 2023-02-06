@@ -6,7 +6,7 @@ body{
 .background{
     display:static;
     height:500px;
-    background-image: url(/assets/basecampbg.PNG);
+    background-image: url(/assets/paths.PNG);
     background-repeat:no-repeat;
     background-color: black;
   }
