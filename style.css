@@ -10,7 +10,6 @@ body{
   background-color: black;
 }
 
-
 button{
   position: absolute;
   z-index:2;
@@ -24,7 +23,6 @@ button{
   font-size: 20px;
   font-family:cursive;
   color:rgb(250, 153, 74);
-
 }
 
 h1{
@@ -35,13 +33,11 @@ h1{
   font-family: 'Gloria Hallelujah', serif;
   font-size: 80px;
   color:rgb(72, 102, 141);
-  -webkit-text-stroke: 0.5px rgb(20, 29, 18);
-
+  -webkit-text-stroke: 0.5px rgb(13, 53, 8);
 }
 
-
-
 .container{
+  top: 150px;
   width: 100%;
   min-height: 100vh;
   position: relative;

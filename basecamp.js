@@ -4,12 +4,6 @@ const optionBox1 = document.getElementById('option1')
 let backbutton = document.getElementById('option1');
 
 
-  function newText(){
-    document.getElementById("NarratorText").innerHTML = "new text";
-  }
-
-
-
   function option1(opt1){
     let option1 = document.getElementById('option1');
     let option2 = document.getElementById('option2');
@@ -44,7 +38,6 @@ let backbutton = document.getElementById('option1');
     let option3 = document.getElementById('option3');
     let option4 = document.getElementById('option4');
     let option5 = document.getElementById('option5');
-    let optionBoxes = document.getElementById('optionBoxes');
 
     document.getElementById("NarratorText").innerHTML = "A what?  Did you hit your head or something?  Here, I have some tea boiling...";
     if(option3.style.display = 'inline-block'){
@@ -65,10 +58,10 @@ let backbutton = document.getElementById('option1');
     let shroomkey = window.sessionStorage.getItem('shroomkey',2);
     let shroomkey2 = window.sessionStorage.getItem('shroomkey2',2);
     let doordiv = document.getElementById('doordiv');
+    let narratorText = document.getElementById('narratorText');
   
     if (shroomkey == 2){
       shroomie1.style.display='block';
-      
     }
   
     if (shroomkey2 == 2){
@@ -77,6 +70,7 @@ let backbutton = document.getElementById('option1');
 
     if (shroomie1.style.display =='block' && shroomie2.style.display =='block'){
       doordiv.style.display = 'block';
+      document.getElementById("NarratorText").innerHTML="I think I have enough to open the door now...";
     }
   }
 
